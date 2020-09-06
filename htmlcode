@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<base href="_w_078ec0c9/">
+    <script type="text/javascript">
+(function() {
+  var workerId = '_w_078ec0c9';
+  // remove base href if worker ID is in url
+  if (window.location.href.indexOf(workerId) > 0) {
+    document.querySelector('base').removeAttribute('href');
+  }
+})();
+</script>
+
+      <script type="text/javascript">
+      var __connect = {
+        shinyPre101: false
+      }
+      </script>
+      
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">json2[2014.02.04];jquery[3.5.1];shiny[1.5.0];bootstrap[3.4.1]</script>
+<script src="shared/json2-min.js"></script>
+<script src="shared/jquery.min.js"></script>
+<link href="shared/shiny.css" rel="stylesheet" />
+<script src="shared/shiny.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="shared/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<script src="shared/bootstrap/js/bootstrap.min.js"></script>
+<script src="shared/bootstrap/shim/html5shiv.min.js"></script>
+<script src="shared/bootstrap/shim/respond.min.js"></script>  <title>Iris Dataset</title>
+<script src="__assets__/sockjs-0.3.min.js"></script>
+<script src="__assets__/shiny-server-client.min.js"></script>
+<script>preShinyInit({reconnect:true,reconnectTimeout:15000,disableProtocols:["xdr-streaming","xdr-polling","websocket"],transportDebugging:false,token:true,workerId:true,subappTag:true,extendSession:true,fixupInternalLinks:true});</script>
+<link rel="stylesheet" type="text/css" href="__assets__/rstudio-connect.css"/>
+</head>
+<body>
+<script type="text/javascript" src="/__static__/components/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
+<script type="text/javascript" src="/__static__/frontend/scripts/shinyapps.frame.content.js"></script>
+<script type="text/javascript" src="/__static__/frontend/scripts/shinyapps.js"></script>
+
+  <div class="container-fluid">
+    <h2>Iris Dataset</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <form class="well">
+          <div id="x" class="form-group shiny-input-radiogroup shiny-input-container">
+            <label class="control-label" for="x">Select X-axis:</label>
+            <div class="shiny-options-group">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="x" value="a" checked="checked"/>
+                  <span>Sepal.Length</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="x" value="b"/>
+                  <span>Sepal.Width</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="x" value="c"/>
+                  <span>Petal.Length</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="x" value="d"/>
+                  <span>Petal.Width</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div id="y" class="form-group shiny-input-radiogroup shiny-input-container">
+            <label class="control-label" for="y">Select Y-axis:</label>
+            <div class="shiny-options-group">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="y" value="e" checked="checked"/>
+                  <span>Sepal.Length</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="y" value="f"/>
+                  <span>Sepal.Width</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="y" value="g"/>
+                  <span>Petal.Length</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="y" value="h"/>
+                  <span>Petal.Width</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-8">
+        <div id="distPlot" class="shiny-plot-output" style="width: 100% ; height: 400px"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
